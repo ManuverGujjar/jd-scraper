@@ -39,7 +39,7 @@ import sys
 
 
 
-class Scrapper(webdriver.Firefox):
+class Scraper(webdriver.Firefox):
     def __init__(self):
         options = Options()
         options.headless = True
@@ -102,7 +102,7 @@ class Extractor:
 
 
 
-driver = Scrapper()
+driver = Scraper()
 driver.get(URL)
 driver.scroll_to_end()
 
